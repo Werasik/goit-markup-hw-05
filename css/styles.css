@@ -475,7 +475,6 @@ margin-right: 16px;
 .picture-text {
     color: var(--cloud);
     line-height: 1.5;
-    display: none;
 }
 
 .section-h {
@@ -487,6 +486,16 @@ margin-right: 16px;
 }
 .relative-portfolio-block{
     position: relative;
+    width: 360px;
+    height: 300px;
+}
+.absolute-portfolio-block{
+    position: absolute;
+    transition-property: translate 500ms linear;
+    overflow: hidden;
+}
+.absolute-portfolio-block:hover{
+    translate: 100px 100px;
 }
 .block-content p{
     color: var(--slate);

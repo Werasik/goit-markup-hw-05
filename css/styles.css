@@ -488,18 +488,26 @@ margin-right: 16px;
     position: relative;
     width: 360px;
     height: 300px;
+    overflow: hidden;
 }
 .absolute-portfolio-block{
     position: absolute;
     transition-property: translate 500ms linear;
-    overflow: hidden;
+    padding: 40px 32px 0 32px;
+    background-color: var(--iris);
+    width: 360px;
+    height: 300px;
+    left: 0;
+    top: 300px;
 }
-.absolute-portfolio-block:hover{
-    translate: 100px 100px;
+.portfolio-block:hover .absolute-portfolio-block,
+a:focus .absolute-portfolio-block{
+    top: 0;
 }
 .block-content p{
     color: var(--slate);
 }
+
 /* modal */
 .is-hidden{
     visibility: hidden;

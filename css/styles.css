@@ -186,7 +186,6 @@ header {
     background: #404BBF;
     box-shadow: 0px 4px 4px 0px #00000026;
 }
-
 /* section2 */
 .icon-item-section-two {
     display: flex;
@@ -449,6 +448,7 @@ margin-right: 16px;
     flex-direction: column;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     flex-basis: calc((100% - 6 * 24px) / 9);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-block:hover {
@@ -492,13 +492,14 @@ margin-right: 16px;
 }
 .absolute-portfolio-block{
     position: absolute;
-    transition-property: translate 500ms linear;
+    transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px 32px 0 32px;
     background-color: var(--iris);
     width: 360px;
     height: 300px;
     left: 0;
     top: 300px;
+
 }
 .portfolio-block:hover .absolute-portfolio-block,
 a:focus .absolute-portfolio-block{

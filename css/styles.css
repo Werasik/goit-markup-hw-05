@@ -186,6 +186,7 @@ header {
     background: #404BBF;
     box-shadow: 0px 4px 4px 0px #00000026;
 }
+
 /* section2 */
 .icon-item-section-two {
     display: flex;
@@ -519,7 +520,8 @@ a:focus .absolute-portfolio-block{
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%) scale(0);
+transition: transform 250ms linear;
 }
 .backdrop{
     position: fixed;
@@ -529,6 +531,9 @@ transform: translate(-50%, -50%);
     height: 100%;
     background-color:rgba(46, 47, 66, 0.4);
     ;
+}
+.backdrop:hover .modal{ 
+    transform: translate(-50%, -50%) scale(1);
 }
 .modal{
     width: 408px;

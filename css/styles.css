@@ -61,6 +61,11 @@ li {
 div>.section-title {
     text-align: center;
 }
+.icons-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .icons-social-media:hover,
 .icons-social-media:focus {
@@ -115,6 +120,7 @@ header {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px 0;
     display: block;
+    color: var(--iris);
 }
 
 .nav-link1::after,
@@ -309,15 +315,17 @@ header {
 
 .icon-list-section-four {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-four-content p {
     margin-bottom: 12px;
 }
 
-.icon-section-four {
-    width: 40px;
-    height: 40px;
+.icon-section-four{
+width: 40px;
+height: 40px;
 }
 
 .icon-item-section-four:not(:last-child) {

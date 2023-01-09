@@ -25,7 +25,7 @@ li {
     list-style: none;
 }
 
-a {
+.link{
     text-decoration: none;
 }
 
@@ -71,7 +71,6 @@ div>.section-title {
 header {
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-    padding: 24px 0;
 }
 
 .container-header {
@@ -87,8 +86,8 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--navy-blue);
-    text-decoration: none;
     margin-right: 77px;
+    padding: 24px 0;
 }
 
 .web-logo {
@@ -109,34 +108,35 @@ header {
 
 .nav-link1,
 .nav-link2 {
-    text-decoration: none;
     font-weight: 600;
     line-height: 1.5;
     color: var(--navy-blue);
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link1::after,
 .nav-link2::after {
     content: '';
-    display: block;
     position: absolute;
     background-color: #4d5ae5;
     width: 100%;
     border-radius: 4px;
     height: 4px;
     left: 0;
-    top: 42px;
+    bottom: 0;
 }
 
 .nav-link {
-    text-decoration: none;
+    display: block;
     font-weight: 600;
     line-height: 1.5;
     color: var(--navy-blue);
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -147,13 +147,10 @@ header {
 
 .nav-link1:hover,
 .nav-link1:focus,
-.nav-link1:active {
-    color: var(--iris);
-}
-
+.nav-link1:active, 
 .nav-link2:hover,
 .nav-link2:focus,
-.nav-link2:active {
+.nav-link2:active{
     color: var(--iris);
 }
 
@@ -166,7 +163,6 @@ header {
 }
 
 .contact-item {
-    text-decoration: none;
     color: var(--slate);
     line-height: 1.5;
     padding: 24px 0;
@@ -407,7 +403,6 @@ footer {
 }
 
 .logo-footer {
-    text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
